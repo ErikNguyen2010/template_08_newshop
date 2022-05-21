@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+html, body{
+    overflow-x: hidden;
+}
+.container1{
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 15px;
+}
+.header{
+    background-color: #1365c0;
+}
+.header .navbar-brand span{
+    width: 14px;
+    height: 22px;
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 22px;
+}
+.header .navbar-nav a{
+    font-size: 20px;
+    font-weight: 300;
+}
+.sub-header{
+    background-color: #0f59af;
+}
+.sub-header .navbar-brand{
+    font-size: 40px;
+    top: -5px;
+}
+.sub-header .navbar-nav a{
+    font-size: 20px;
+    font-weight: 300;
+}
+.sub-header .navbar-collapse{
+    margin-left: 30px;
+}
+.carousel{
+    background: url(../img/b1.jpg) 50% 50%/ cover no-repeat;
+    height: 45vw;
+}
+.image{
+    padding: 50px 0;
+}
+.image .container1{
+    padding: 0 100px;
+}
+.image .list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.image .item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-1{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+.item-2{
+    grid-column: 3 / span 2;
+}
+.product{
+    padding: 50px 0;
+    background-color: #f9f8f8;
+}
+.product .container1{
+    padding: 0 100px;
+}
+.product__header{
+    color: #1365c0;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.card-title{
+    color:#1365c0;
+    font-size: 25px;
+    font-weight: 400;
+}
+.card-text{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.card-disable{
+    text-decoration: line-through;
+    color: #888;
+}
+.card-body{
+    background-color: #f9f8f8;
+}
+.card-body span{
+    font-size: 14px;
+    font-weight: 600;
+}
+.card-btn{
+    background-color: #fff;
+    border: 3px solid #f1a229;
+    padding: 5px 0px;
+    width: 130px;
+    margin: 0 auto;
+    color: #1365c0;
+    font-weight: 300;
+    border-radius: 0;
+}
+.card{
+    border: 2px solid rgba(0,0,0,.125);
+}
+.discount{
+    background: url(../img/ban1.jpg) 50% 50%/ cover no-repeat;
+    height: 700px;
+    position: relative;
+}
+.discount__main{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.discount__main p{
+    font-size: 60px;
+    letter-spacing: 1px;
+}
+.discount__main h1{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+.discount__main button{
+    background-color: #f1a229;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 3px;
+}
+.discount::before{
+    content: "";
+    position: absolute;
+    border-top: 1px solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.trend{
+    background-color: #f9f8f8;
+    padding: 50px 0;
+}
+.trend__main h1{
+    text-align: center;
+    color: #1365c0;
+    margin-bottom: 40px;
+    position: relative;
+}
+.trend__main h1::after{
+    content: "";
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+.trend__item{
+    position: relative;
+}   
+.trend__item img{
+    display: block;
+    width: 100%;
+}
+.trend__item p{
+    text-align: center;
+    position: absolute;
+    right: 8px;
+    top: 7px;
+    color: #fff;
+    background-color: #1365c0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.trend__item span{
+    position: absolute;
+    color: #fff;
+    background-color: rgba(33,94,159, 0.7);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+.trend .row{
+    margin-bottom: 30px;
+}
+.contact{
+    background-color: #1365c0;
+    padding: 30px 0;
+}
+.contact .container1{
+    padding: 0 100px;
+}
+.contact__list{
+    display: flex;
+}
+.contact__item{
+    width: 25%;
+    padding: 0 25px;
+}
+.contact__content{
+    color: #fff;
+}
+.contact__content h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact__content a,
+.contact__content p,
+.contact__content span{
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: 300;
+}
+.footer{
+    background-color: #000;
+    padding: 30px 0;
+}
+.footer .container1{
+    padding: 0 100px;
+}
+.footer__list{
+    display: flex;
+}
+.footer__item{
+    width: 50%;
+    padding: 0 25px;
+}
+.footer__item p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+}
+.footer__item a{
+    font-size: 40px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+
+@media screen  and (max-width: 1200px){
+    
+}
+@media screen  and (max-width: 992px){
+    .card{
+        margin-bottom: 20px;
+    }
+    .image .list{
+        grid-template-columns: 1fr 1fr;
+    }
+    .item-1{
+        grid-column: inherit;
+        grid-row: inherit;
+    }
+    .item-2{
+        grid-column: inherit;
+    }
+    
+    
+    .display-none{
+        display: none;
+    }
+    .contact__list{
+        display: block;
+    }
+    .contact__item{
+        width: 100%;
+        text-align: center;
+    }
+    .sub-header .nav-link:first-child{
+        margin-left: 1rem;
+    }
+    .sub-header .navbar-collapse{
+        margin-left: 0;
+    }
+    .text-align-right{
+        text-align: right;
+    }
+}
+@media screen  and (max-width: 768px){
+    
+    .card-title{
+        font-size: 35px;
+    }
+    .card-text{
+        font-size: 30px;
+    }
+    .card-body span{
+        font-size: 25px;
+    }
+    .card-btn{
+        font-size: 30px;
+        width: 150px;
+    }
+    .image .list{
+        display: block;
+    }
+    .item{
+        padding: 10px 0;
+    }
+    
+    .product__header,
+    .trend__main h1{
+        font-size: 60px;
+    }
+    .trend__item{
+        padding: 10px 0;
+    }
+    .trend__item p{
+        width: 50px;
+        height: 50px;
+        line-height: 48px;
+        font-size: 20px;
+        top: 16px;
+    }
+    .trend__item span{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .footer__item{
+        padding: 0 10px;
+    }
+}
+@media screen  and (max-width: 576px){
+  
+  
+}
